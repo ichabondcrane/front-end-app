@@ -5,7 +5,7 @@
         "ng": "ng",
         "start": "ng serve",
         "build": "ng build",
-        "test": "ng test --no-watch --no-progress --browsers=ChromeHeadless",
+        "test": "ng test",
         "lint": "ng lint",
         "e2e": "ng e2e"
     },
@@ -24,7 +24,8 @@
         "font-awesome-icons": "^1.6.0",
         "rxjs": "~6.4.0",
         "tslib": "^1.9.0",
-        "zone.js": "~0.9.1"
+        "zone.js": "~0.9.1",
+        "puppeteer": "^1.19.0"
     },
     "devDependencies": {
         "@angular-devkit/build-angular": "~0.801.0",
