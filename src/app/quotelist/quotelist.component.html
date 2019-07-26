@@ -1,0 +1,19 @@
+<br>
+<br>
+<div>
+    <div>
+        <button class="btn btn-outline-secondary" type="submit">New Quote</button>
+    </div>
+    <br>
+    <div class="list-group">
+        <a href="#" class="list-group-item list-group-item-action" *ngFor="let quote of quotelist" [routerLink]="['/app-quotedetail']">
+            <div class="d-flex w-100 justify-content-between">
+                <h5 class="mb-1">List group item heading {{quote.contractorsname}}</h5>
+                <small>{{quote.amount}}</small>
+            </div>
+            <p class="mb-1">{{quote.constractorsname}}</p>
+            <small>{{quote.desc}}</small>
+        </a>
+
+    </div>
+</div>

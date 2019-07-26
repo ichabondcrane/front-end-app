@@ -1,11 +1,20 @@
+
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
 
 
-const routes: Routes = [];
+import { QuotedetailComponent } from './quotedetail/quotedetail.component';
+import { QuotelistComponent } from './quotelist/quotelist.component';
+const appRoutes: Routes = [
+  //{ path: '', redirectTo: '/', pathMatch: 'full' , component: QuotelistComponent},
+  { path: '',  component: QuotelistComponent},
+  { path: 'app-quotedetail', component: QuotedetailComponent },
+];
 
 @NgModule({
-  imports: [RouterModule.forRoot(routes)],
+  imports: [RouterModule.forRoot(appRoutes)],
   exports: [RouterModule]
 })
-export class AppRoutingModule { }
+export class AppRoutingModule {
+
+}
