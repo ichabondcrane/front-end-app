@@ -1,0 +1,13 @@
+dist: trusty
+sudo: false
+language: node_js
+group: bluezone
+before_install:
+- sudo add-apt-repository -y ppa:ubuntu-toolchain-r/test
+- sudo apt-get -qq update
+- sudo apt-get -qq install g++-4.8
+env:
+- CXX=g++-4.8
+node_js:
+- 11.8.0
+script: npm test
